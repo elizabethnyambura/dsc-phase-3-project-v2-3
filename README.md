@@ -91,6 +91,78 @@ Graph features above exhibit a normal distribution, with the exception of custom
 
 Customer service calls, on the other hand, exhibit multiple peaks, indicating the presence of several modes within the population. This observation is logical since customer service calls are discrete integers and not continuous float numbers.
 
+**MODELLING**
+
+
+In our analysis, we constructed three models for predicting customer churn within the Seriatel company. These models are as follows:
+
+Logistic Regression: Initially, it achieved an accuracy rate of 89.8% on the training data and 85.6% on the testing data. However, after implementing 5-fold cross-validation, the testing data accuracy improved to 84.8%, while the training data accuracy dropped slightly to 89.7%.
+
+Decision Tree Classifier: This model initially attained an accuracy level of 88.6% on the training data and 91.1% on the testing data for predicting customer churn. Subsequently, after fine-tuning using grid search, the training accuracy improved to 91.7%, and the testing accuracy increased to 93.8%.
+
+Random Forest Classifier: The initial accuracy of this model was 86.8% on the training data and 87.7% on the testing data. Following hyperparameter tuning, the accuracy on the training data substantially improved to 93.0%, with testing data accuracy reaching 91.0%.
+
+After careful evaluation, we selected the two best-performing models, namely the Decision Tree and Random Forest, and further refined their hyperparameters using grid search. This optimization contributed to enhancing model performance and mitigating the risk of overfitting.
+
+**EVALUATION**
+
+Based on our analysis of the models, we have determined that the Decision Tree model is the most suitable choice for Seriatel in predicting customer churn due to its strong performance.
+
+To further assess the model's performance, we generated ROC curves to evaluate the ROC accuracy and the area under the curve. We observed the following ROC scores for the three models: Logistic Regression (0.82), Decision Tree (0.91), and Random Forest Classifier (0.90).
+
+After conducting hyperparameter tuning, we reaffirmed that the Decision Tree Classifier is indeed the superior model for predicting customer churn in Seriatel. The accuracy of this model improved following grid search tuning. While the Random Forest model is effective, it exhibits certain drawbacks, including increased complexity, longer execution times and overfitting tendencies after grid search tuning.
+
+![image](https://github.com/elizabethnyambura/dsc-phase-3-project-v2-3/assets/136367890/e073dce3-ab41-482f-9d7b-60240a97435b)
+
+**CONCLUSION**
+
+
+The Decision Tree Classifier emerges as the optimal model for Seriatel's implementation.
+
+This analysis equips Seriatel with the capability to:
+
+* Achieve precise customer churn predictions.
+* Realize cost savings through the formulation of effective customer retention strategies.
+* Assure customer retention.
+* Foster the development of robust business strategies and data-driven decision-making by gaining invaluable customer insights and understanding customer 
+  behavior
+
+**RECOMMENDATIONS**
+
+* Continuous Model Optimization: Regularly fine-tune and optimize the decision tree model as new data becomes available.
+  
+* Benchmarking: Compare the performance of the decision tree model with industry benchmarks to gauge its effectiveness and competitiveness.
+
+* Long-Term Strategy: Use the insights from the model to shape the company's long-term strategic direction
+  
+* Customer Feedback Analysis: Leverage the model's predictive capabilities to analyze and act upon customer feedback more effectively.
+
+* Segmentation: Use the model's insights to segment the customer base into different groups based on churn risk and behavior
+
+**NEXT STEPS**
+
+* Regular Model Reevaluation: Periodically revisit the model's performance and consider retraining or updating it as necessary to adapt to changing market 
+ dynamics.
+
+* Customer Retention Strategies: Develop and execute customer retention strategies based on the insights and predictions provided by the model. 
+
+* Training and Awareness: Educate and train relevant teams within the company on how to utilize the model's insights for better decision-making.
+
+* Long-Term Strategy Development: Leverage the collected data and customer behavior insights to formulate long-term business strategies that align with customer 
+  needs and market trends.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
