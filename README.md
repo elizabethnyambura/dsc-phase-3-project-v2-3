@@ -57,13 +57,42 @@ Due to increased competition in the telecommunication industry, there has been c
   
 * Total_charge: The total charges incurred by the customer across all usage periods.
 
-  **DATA PROCESSING**
+**DATA PROCESSING**
 
 We conducted a thorough examination to identify missing values, duplicates, as well as both categorical and numerical data, ensuring the cleanliness and proper formatting of the dataset for modeling. Additionally, we addressed class imbalances in the data and standardized it to establish consistency and uniformity for modeling purposes. This process was carried out to guarantee the validity, accuracy, and completeness of the data for modeling.
 
 Furthermore, we performed the removal of outliers that could potentially distort the data and lead to inaccurate predictions. The chart below illustrates a box plot, showcasing the impact of the outlier exclusions.
 
 ![image](https://github.com/elizabethnyambura/dsc-phase-3-project-v2-3/assets/136367890/4e0615c7-b08b-4696-90d6-41e383d4143e)
+
+**DATA ANALYSIS**
+
+To gain deeper insights into our data, we created visualizations for various columns, exploring the relationships between churn rates, voice mail usage, international plan subscriptions, and the number of calls made within the United States.
+
+![image](https://github.com/elizabethnyambura/dsc-phase-3-project-v2-3/assets/136367890/1de28741-2adc-4fd7-b9f6-302d65b0faee)
+
+The above chart indicates that West (WV) state has the highest number of total calls while (CA) has the least number of total calls
+
+![image](https://github.com/elizabethnyambura/dsc-phase-3-project-v2-3/assets/136367890/918c99b5-40d7-4a55-8c75-a0070a032db3)
+
+The bar graph indicates that there is little variation among people making international calls concerning their choice of an international plan. On average, the number of international calls remains nearly consistent, regardless of whether individuals opt for an international plan or not.
+
+![image](https://github.com/elizabethnyambura/dsc-phase-3-project-v2-3/assets/136367890/52746d16-9b27-4c30-80c9-dab19e1f3a3e)
+
+The data on the chart reveals a significant correlation between the number of calls and loyalty.It suggests that a substantial portion of individuals who engage in these calls are loyal to Syriatel, resulting in a lower likelihood of them switching to another service provider.
+
+![image](https://github.com/elizabethnyambura/dsc-phase-3-project-v2-3/assets/136367890/90add91f-3973-4380-ab9d-0b0a80671784)
+
+The ghraphs above indicates that Voice Mail plan subscribers exhibit higher customer loyalty, primarily attributed to their lower churn rate. Conversely, customers who have subscribed to the international plan display a higher churn rate, indicating a greater probability of switching from Syriatel.
+
+![image](https://github.com/elizabethnyambura/dsc-phase-3-project-v2-3/assets/136367890/cf2ee432-2329-4eb1-994b-471e99f5853e)
+
+Graph features above exhibit a normal distribution, with the exception of customer service calls. Total international calls display a slight right skew, although it still maintains a relatively normal distribution.
+
+Customer service calls, on the other hand, exhibit multiple peaks, indicating the presence of several modes within the population. This observation is logical since customer service calls are discrete integers and not continuous float numbers.
+
+
+
 
 
 
